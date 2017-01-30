@@ -20,7 +20,7 @@
 
 #import "RMXOverlayView.h"
 
-#import "RMXOverlayNavigationBar.h"
+#import "RMXOverlayTopBarView.h"
 
 static CGFloat kDefaultOptionsViewHeight = 260.0f;
 static CGFloat kToolbarHeight = 44.0f;
@@ -41,7 +41,7 @@ static CGFloat kToolbarHeight = 44.0f;
     [_panelContainerView addSubview:_tableView];
 
     // Top navigation bar.
-    _navigationBar = [[RMXOverlayNavigationBar alloc] initWithFrame:CGRectZero];
+    _navigationBar = [[RMXOverlayTopBarView alloc] initWithFrame:CGRectZero];
     [_panelContainerView addSubview:_navigationBar];
 
     // Bottom toolbar.

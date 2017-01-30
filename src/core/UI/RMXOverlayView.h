@@ -16,7 +16,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class RMXOverlayNavigationBar;
+@class RMXOverlayTopBarView;
 
 static const CGFloat RMXOverlayNavbarHeight = 60.0f;
 
@@ -43,7 +43,7 @@ static const CGFloat RMXOverlayNavbarHeight = 60.0f;
 @property(nonatomic, readonly) UIView *panelContainerView;
 
 /** A custom navigation bar for the overlay. */
-@property(nonatomic, readonly) RMXOverlayNavigationBar *navigationBar;
+@property(nonatomic, readonly) RMXOverlayTopBarView *navigationBar;
 
 /** A table view that contains the Remixer controls. */
 @property(nonatomic, readonly) UITableView *tableView;

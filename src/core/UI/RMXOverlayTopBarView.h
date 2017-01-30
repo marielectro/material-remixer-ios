@@ -16,7 +16,11 @@
 
 #import <UIKit/UIKit.h>
 
-/** A custom UINavigationBar used inside of the overlay. */
-@interface RMXOverlayNavigationBar : UINavigationBar
+/** A custom UIView used inside of the overlay. */
+@interface RMXOverlayTopBarView : UIView
+
+@property(nonatomic, readonly) UIButton *closeButton;
+
+@property(nonatomic, readonly) UILabel *titleLabel;
 
 @end

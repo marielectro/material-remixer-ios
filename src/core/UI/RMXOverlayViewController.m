@@ -29,7 +29,7 @@
 #import "RMXCellSwitch.h"
 #import "RMXCellTextInput.h"
 #import "RMXCellTextList.h"
-#import "RMXOverlayNavigationBar.h"
+#import "RMXOverlayTopBarView.h"
 #import "RMXOverlayView.h"
 #import "RMXRemixer.h"
 
@@ -87,10 +87,6 @@ static CGFloat kInitialSpeed = 0.4f;
   [self.view.tableView registerClass:[RMXCellTextInput class]
               forCellReuseIdentifier:NSStringFromClass([RMXCellTextInput class])];
 
-  UINavigationItem *item = self.view.navigationBar.topItem;
-  [(UIButton *)item.leftBarButtonItem.customView addTarget:self
-                                                    action:@selector(dismissOverlay:)
-                                          forControlEvents:UIControlEventTouchUpInside];
   _panGestureRecognizer =
       [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPan:)];
   _panGestureRecognizer.delegate = self;
